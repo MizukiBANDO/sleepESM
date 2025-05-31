@@ -1,0 +1,38 @@
+<div class="container py-4 border">
+    <h1 class="mb-4"><i class="bi bi-pencil-square icon-large4"></i> 睡眠日誌</h1>
+
+    <!-- タブメニュー -->
+    <ul class="nav nav-tabs mb-3" id="tabMenu" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="start-tab" data-bs-toggle="tab" data-bs-target="#start" type="button"
+                role="tab">
+                就寝時
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="end-tab" data-bs-toggle="tab" data-bs-target="#end" type="button" role="tab">
+                起床時
+            </button>
+        </li>
+    </ul>
+
+    <!-- タブコンテンツ -->
+    <div class="tab-content">
+        <div class="tab-pane fade" id="start" role="tabpanel">
+            <div id="sleepStartChecklist" class="mb-3"></div>
+            <button id="startSleepBtn" class="btn btn-primary">Start Sleep</button>
+        </div>
+
+        <div class="tab-pane fade" id="end" role="tabpanel">
+            <div id="sleepStartDisplay" class="mb-3 text-muted"></div> <!-- ← 追加 -->
+            <div id="sleepEndChecklist" class="mb-3"></div> <!-- ✅ 追加 -->
+            <button id="endSleepBtn" class="btn btn-success">End Sleep</button>
+        </div>
+
+    </div>
+
+    <a href="3.log" data-link="true" class="btn btn-outline-secondary mt-4">記録を見る</a>
+    <button id="registerSW" class="btn btn-outline-primary mt-4 me-2">PWA登録</button>
+    <button id="updateSW" class="btn btn-outline-secondary mt-4">PWA更新</button>
+
+</div>

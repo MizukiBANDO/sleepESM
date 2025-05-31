@@ -1,0 +1,57 @@
+<div class="border container py-4">
+    <h1 class="mb-4"><i class="bi bi-journal-bookmark-fill icon-large4"></i> 履歴</h1>
+
+    <div id="recordList"></div>
+
+    <a href="2.function" data-link="true" class="btn btn-outline-secondary mt-3">← 記録ページに戻る</a>
+    <button id="exportCSV" class="btn btn-outline-success mt-3">CSVで出力</button>
+
+    <script type="module" src="records.js"></script>
+
+    <!-- 編集用モーダル -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">記録の編集</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editForm">
+<!-- 寝た時間 -->
+<div class="mb-3">
+    <label class="form-label">寝た時間</label>
+    <div class="d-flex flex-wrap gap-2 align-items-center">
+        <select id="start-year" class="form-select form-select-sm w-auto"></select><span>年</span>
+        <select id="start-month" class="form-select form-select-sm w-auto"></select><span>月</span>
+        <select id="start-day" class="form-select form-select-sm w-auto"></select><span>日</span>
+        <select id="start-hour" class="form-select form-select-sm w-auto"></select><span>時</span>
+        <select id="start-minute" class="form-select form-select-sm w-auto"></select><span>分</span>
+    </div>
+</div>
+
+<!-- 起きた時間 -->
+<div class="mb-3">
+    <label class="form-label">起きた時間</label>
+    <div class="d-flex flex-wrap gap-2 align-items-center">
+        <select id="end-year" class="form-select form-select-sm w-auto"></select><span>年</span>
+        <select id="end-month" class="form-select form-select-sm w-auto"></select><span>月</span>
+        <select id="end-day" class="form-select form-select-sm w-auto"></select><span>日</span>
+        <select id="end-hour" class="form-select form-select-sm w-auto"></select><span>時</span>
+        <select id="end-minute" class="form-select form-select-sm w-auto"></select><span>分</span>
+    </div>
+</div>
+  
+                        
+                        <div id="editStartChecklist" class="mb-4"></div>
+                        <div id="editEndChecklist" class="mb-4"></div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">保存</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</div>

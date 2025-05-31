@@ -1,0 +1,48 @@
+<div class="border align-items-center justify-content-center">
+    <!-- header -->
+<div class="btn-group d-flex border-bottom">
+    <button data-action="show-left" class="btn btn-light btn-block fw-bold rounded-0 border-end">
+        <u>ポイント</u>
+    </button>
+    <button data-action="show-right" class="btn btn-light btn-block fw-bold rounded-0 border-start">
+        <u>クレジット</u>
+    </button>
+</div>
+
+    <!-- header -->
+
+    <!-- main -->
+    <div id="leftSide" class="text-center">
+        <div class="text-start m-3">
+            <h2>ポイント</h2>
+            <div id="rewardStatus" class="mt-3 text-center">
+                <span class="btn bg-success text-white">✨ ポイント: <span id="pointDisplay">0</span></span>
+            </div>
+
+            <div id="loginResult" class="mt-3"></div>
+
+            <div id="loggedInUserInfo" class="card m-1 mt-4 mb-3 p-2 shadow bg-light d-none">
+                <div class="text-muted small" id="userEmailDisplay">ログイン中: </div>
+                <button class="btn btn-outline-danger btn-sm mt-2" id="logoutButton">ログアウト</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main -->
+
+    <!-- side -->
+    <div id="rightSide" class="d-none text-center">
+
+        <div class="text-start m-3">
+            <h2>クレジット</h2>
+            <div id="rewardStatus" class="mt-3 text-center">
+                <span class="btn bg-info text-dark me-2">💠 クレジット: <span id="creditDisplay">0</span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- side -->
+</div>
+

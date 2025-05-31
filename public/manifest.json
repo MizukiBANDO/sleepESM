@@ -1,0 +1,14 @@
+{
+  "name": "Sleep Logger",
+  "short_name": "SleepLog",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d6efd",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

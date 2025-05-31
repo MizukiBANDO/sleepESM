@@ -1,0 +1,26 @@
+:root {
+    --FontSize: calc(min(100dvw, 100dvh * 16 / 10) * 10 / 16 * 0.023);
+    --elSize: calc(min(100dvw, 100dvh * 16 / 10) * 10 / 16 * 0.02);
+}
+
+body,
+html {
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: #e9ecef;
+    margin: 0;
+    font-family: "Roboto Mono", "Noto Sans JP", sans-serif;
+    font-size: var(--FontSize);
+}
+
+h1 { font-size: calc(var(--FontSize) * 2   );}
+h2 { font-size: calc(var(--FontSize) * 1.5 );}
+h3 { font-size: calc(var(--FontSize) * 1.17);}
+h4 { font-size: calc(var(--FontSize) * 1   );}
+h5 { font-size: calc(var(--FontSize) * 0.83);}
+h6 { font-size: calc(var(--FontSize) * 0.67);}
+
+
+

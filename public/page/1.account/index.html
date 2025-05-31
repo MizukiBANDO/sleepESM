@@ -1,0 +1,80 @@
+<div class="border align-items-center justify-content-center">
+
+    <!-- header -->
+    <div class="btn-group d-flex border-bottom">
+        <button data-action="show-left" class="btn btn-light btn-block fw-bold rounded-0 border-end">
+            <u>アカウント設定</u>
+        </button>
+        <button data-action="show-right" class="btn btn-light btn-block fw-bold rounded-0 border-start">
+            <u>ユーザー設定</u>
+        </button>
+    </div>
+    <!-- header -->
+
+    <!-- main -->
+    <div id="leftSide" class="text-center">
+        <div class="text-start m-3">
+            <h2>アカウント</h2>
+            <div id="registerPrompt" class="text-danger small">
+                まだアカウントが登録されていません。まずはユーザー登録からはじめてください。  
+            </div>
+
+
+            <div id="loggedInUserInfo" class=" d-none">
+                <div class="card m-1 mt-4 mb-3 p-2 shadow bg-light ">
+                    <div id="userNameDisplay" class="fw-bold">ログイン中: </div>
+                </div>
+                
+                <hr class="mt-4">
+                <h2>ステータス</h2>
+                <div id="rewardStatus" class="mt-3 text-center">
+                    <span class="badge bg-info text-dark me-2">💠 クレジット: <span id="creditDisplay">0</span></span>
+                    <span class="badge bg-success text-white">✨ ポイント: <span id="pointDisplay">0</span></span>
+                </div>
+                
+                <div class="mt-3 ms-2 me-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="exclude-001" data-exclude-key="check:alcohol">
+                        <label class="form-check-label" for="exclude-001">飲酒しない</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="exclude-002" data-exclude-key="check:nicotine">
+                        <label class="form-check-label" for="exclude-002">喫煙しない</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="exclude-003" data-exclude-key="check:partner">
+                        <label class="form-check-label" for="exclude-003">同居人がいない</label>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- main -->
+
+    <!-- side -->
+    <div id="rightSide" class="d-none text-center">
+
+        <div class="text-start m-3">
+            <h2>ユーザー登録</h2>
+            <form id="registerForm">
+                <div class="mb-3">
+                    <label for="registerName" class="form-label">名前</label>
+                    <input type="text" class="form-control" id="registerName" required>
+                </div>
+                <div class="text-end">
+                    <button type="submit" class="btn btn-primary rounded-pill">登録</button>
+                </div>
+            </form>
+            <div class="text-end mt-2">
+                <button type="button" id="deleteRegister" class="btn btn-outline-danger btn-sm">登録削除</button>
+            </div>
+            <div id="registerResult" class="mt-3"></div>
+        </div>
+
+    </div>
+
+    <!-- side -->
+</div>

@@ -1,0 +1,181 @@
+body {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    /* Adjust this value if your navbar is taller */
+}
+
+.Bnav {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* ナビゲーションバーに影を追加 */
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 56px;
+        padding-bottom: 0px;
+    }
+}
+
+.max598px {
+    max-width: 598px;
+}
+
+
+.icon-large {
+    font-size: 1.5rem;
+    /* アイコンを大きくするためにフォントサイズを調整 */
+}
+
+.icon-large2 {
+    font-size: 2rem;
+    /* アイコンを大きくするためにフォントサイズを調整 */
+}
+
+.icon-large3 {
+    font-size: 3rem;
+    /* アイコンを大きくするためにフォントサイズを調整 */
+}
+
+.icon-large4 {
+    font-size: 3.5rem;
+    /* アイコンを大きくするためにフォントサイズを調整 */
+}
+
+.nav-link {
+    padding: 0.5rem;
+    /* ナビゲーションリンクのパディングを調整 */
+}
+
+
+
+.shadowD {
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.8);
+    /* ナビゲーションバーに影を追加 */
+}
+
+/* オフキャンバスの幅をカスタマイズ */
+.offcanvas-custom {
+    width: 200px;
+    /* 必要な幅に調整 */
+}
+
+.twemoji {
+    height: 1em;
+    width: 1em;
+    vertical-align: -0.1em;
+}
+
+
+
+
+.icon-large {
+    font-size: 1.5em;
+}
+
+/* ボトムナビの背景色を変更 */
+.nav.Bnav {
+    background-color: #343a40;
+    /* 背景色を変更 */
+}
+
+/* ボトムナビのリンクの色を変更 */
+.nav.Bnav .nav-link {
+    color: #ffffff;
+    /* テキスト色を変更 */
+}
+
+/* ボトムナビのリンクのホバー色を変更 */
+.nav.Bnav .nav-link:hover {
+    color: #adb5bd;
+    /* ホバー時のテキスト色を変更 */
+}
+
+/* ボトムナビのリンクのアクティブ色を変更 */
+.nav.Bnav .nav-link.active {
+    background-color: #495057;
+    /* アクティブ時の背景色を変更 */
+    color: #ffffff;
+    /* アクティブ時のテキスト色を変更 */
+}
+
+/* アイコンの色を変更 */
+.nav.Bnav .nav-link i {
+    color: #ffffff;
+    /* アイコン色を変更 */
+}
+
+/* アイコンのホバー色を変更 */
+.nav.Bnav .nav-link:hover i {
+    color: #adb5bd;
+    /* ホバー時のアイコン色を変更 */
+}
+
+/* アイコンのアクティブ色を変更 */
+.nav.Bnav .nav-link.active i {
+    color: #ffffff;
+    /* アクティブ時のアイコン色を変更 */
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+
+#leftColumn {
+    position: sticky;
+    top: 56px;
+    /* スクロール時に上部からどれくらいの位置に固定するかを指定 */
+    z-index: 1000;
+    /* 必要に応じて、他のコンテンツの上に表示するための優先順位を設定 */
+    overflow-y: scroll;
+    /* 内部的にスクロール可能に設定 */
+    scrollbar-width: none;
+    /* Firefoxでスクロールバーを非表示に */
+    height: calc(100vh - 56px);
+}
+
+#rightColumn {
+    position: sticky;
+    top: 56px;
+    z-index: 1000;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: calc(100vh - 56px);
+}
+
+#leftColumn::-webkit-scrollbar,
+#rightColumn::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edgeでスクロールバーを非表示に */
+}
+
+.ref {
+    text-indent: -2em;
+    /* 2文字分のインデントを設定 */
+    padding-left: 2em;
+    /* 左余白を設定してテキストが通常の位置から始まるように */
+}
+
+
+.text-blue {
+    background-color: rgb(217, 226, 243);
+}
+
+.text-green {
+    background-color: rgb(226, 239, 217);
+}
+
+.text-yellow {
+    background-color: rgb(255, 242, 204);
+}
+
+.text-red {
+    background-color: rgb(251, 228, 213);
+}
