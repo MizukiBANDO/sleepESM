@@ -13,3 +13,7 @@ https://sleepema.onrender.com/
 
 ---
 #### **📝記録の手順**
+![記録の手順1](./image/procedure1.png)
+![記録の手順2](./image/procedure2.png)
+![記録の手順3](./image/procedure3.png)
+![記録の手順4](./image/procedure4.png)
