@@ -4,5 +4,7 @@
 経験サンプリング法の手法を採用し，睡眠と睡眠に関連する行動の測定を可能にする記録アプリです。お手元のスマホやPCで簡単に記録を開始できます。
 📱体験は以下のURLから👇
 https://sleepema.onrender.com/
+![「ねむログ」の概要](./image/nemulog-overview.png)
+
 
 
